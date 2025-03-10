@@ -40,7 +40,7 @@ class LSTM(nn.Module):
 
 
 if __name__ == '__main__':
-    device = torch.device('mps')
+    device = torch.device('cuda')
 
     model = LSTM(input_dim=22, conv_dims=[16, 32, 48, 64], hidden_dim=64, num_layers=1)
     # model = LSTM(input_dim=22, conv_dims=[32, 64], hidden_dim=128, num_layers=1)
